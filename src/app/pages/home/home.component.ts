@@ -12,14 +12,19 @@ import { CardComponent } from '../../components/card/card.component';
 export class HomeComponent {
   cards = [
     {
-      title: 'Tarjeta 1',
-      image: 'imagen1.jpg',
-      content: 'Contenido de la tarjeta 1',
+      title: 'Chicago',
+      image: '/assets/img/img-card1.jpg',
+      description: 'From $600.00',
     },
     {
-      title: 'Tarjeta 2',
-      image: 'imagen2.jpg',
-      content: 'Contenido de la tarjeta 2',
+      title: 'Porto',
+      image: '/assets/img/img-card2.jpg',
+      description: 'From $600.00',
+    },
+    {
+      title: 'Chicago',
+      image: '/assets/img/img-card3.jpg',
+      description: 'From $600.00',
     },
   ];
 }
