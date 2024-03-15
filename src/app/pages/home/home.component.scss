@@ -2,7 +2,7 @@
   background-image: url('/assets/img/img-banner.jpg');
   height: 448px;
   background-repeat: no-repeat;
-  background-position: 40% 30%;
+  background-position: 40% 34%;
   background-attachment: fixed;
   color: white;
   padding: 1rem;
@@ -25,4 +25,11 @@
   &__content a {
     width: fit-content;
   }
+}
+
+.section-cards {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }

@@ -11,8 +11,7 @@
   </div>
 
 
-
 </div>
-<div *ngFor="let card of cards">
-  <app-card [title]="card.title" [image]="card.image" [content]="card.content"/>
-</div>
+<section class="section-cards">
+  <app-card *ngFor="let card of cards" [title]="card.title" [image]="card.image" [content]="card.description" />
+</section>
