@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+$color-tertiary: rgba(194, 1, 20, 1);
+$color-secondary: rgba(17, 58, 93, 1);
+$color-gray-10: rgba(248, 247, 255, 1);
+
+body {
+  background-color: $color-gray-10;
+  margin: 0;
+}
