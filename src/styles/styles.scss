@@ -24,11 +24,18 @@ li, ul {
   /* Agrega cualquier otra propiedad que desees restablecer o modificar */
 }
 
-h1,h2,h3 {
+h1,h2,h3,p {
   margin: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+// Botones
+.button-red {
+  background-color: $color-tertiary;
+  border-radius: 40px;
+  padding: 0.5rem 3.75rem;
 }

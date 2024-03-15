@@ -1,0 +1,18 @@
+<div class="banner">
+  <!-- <img ngSrc="assets/img-banner.jpg" alt="" width="400" height="200" priority> -->
+  <div class="banner__content">
+    <div>
+      <h1>Take a rest</h1>
+      <p>Discover all the offers available at the
+        best prices for the whole country and the
+        world</p>
+    </div>
+    <a class="button-red" href="#">Buy</a>
+  </div>
+
+
+
+</div>
+<div *ngFor="let card of cards">
+  <app-card [title]="card.title" [image]="card.image" [content]="card.content"/>
+</div>
