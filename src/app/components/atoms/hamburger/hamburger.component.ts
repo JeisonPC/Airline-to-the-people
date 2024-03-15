@@ -1,17 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'app-hamburger',
-  templateUrl: './hamburger.component.svg',
+  templateUrl: './hamburger.component.html',
+  imports: [CommonModule]
 })
 export class HamburgerComponent {
-  fillColor = 'rgb(255, 0, 0)';
+  menuOpen = false;
 
-  changeColor() {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    this.fillColor = `rgb(${r}, ${g}, ${b})`;
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
   }
+
 }

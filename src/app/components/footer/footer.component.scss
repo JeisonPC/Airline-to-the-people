@@ -1,0 +1,29 @@
+@import '_variables';
+.footer {
+  background-color: $color-gray-8;
+  padding: 2.25rem 1rem;
+
+  // Sección superior del footer
+  &__section-up {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__section-up-logo > svg {
+    width: 180px;
+    height: auto;
+  }
+  &__bloque-social {
+
+  }
+
+  &__block-destinations {
+    
+  }
+  // Sección superior del footer dentro de las redes sociales
+  &__section-up-social {
+    display: flex;
+    gap: 1rem;
+  }
+
+}
