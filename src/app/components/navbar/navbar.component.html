@@ -1,7 +1,8 @@
 <header class="header">
-  <app-hamburger />
+  <app-hamburger  (hamburgerClick)="clickEvent()" />
+
+
   <app-logo />
   <app-language />
-  <nav class="header__nav">
-  </nav>
+  <app-sidebar class="sidebar" [ngClass]="{'sidebar--open': status}" />
 </header>
