@@ -14,11 +14,27 @@
     height: auto;
   }
   &__bloque-social {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__block-destinations {
-    
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  &__block-destination-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__block-destination-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   // Sección superior del footer dentro de las redes sociales
   &__section-up-social {
