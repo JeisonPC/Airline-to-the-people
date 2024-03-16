@@ -10,23 +10,40 @@ $header: '.header';
   justify-content: space-between;
   padding: 8px 14px;
 
+  &__hamburger {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__section-logo {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__links {
+    display: none;
+  }
+
+  &__section-language {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  &__section-language span {
+    display: none;
+  }
+
+  &__button-language {
+    display: flex;
+  }
+
   &__nav {
     position: absolute;
   }
 }
-
-app-language {
-  display: flex;
-}
-
-app-hamburger {
-  display: flex;
-}
-
-app-logo {
-  display: flex;
-}
-
 
 .sidebar {
   position: absolute;
@@ -38,5 +55,30 @@ app-logo {
 
   &--open {
     left: 0; /* Cuando .open está presente, el sidebar se desliza hacia la vista */
+  }
+}
+
+/* Estilos específicos para tablets */
+@media (min-width: 768px) {
+  #{$header} {
+    padding: 1rem 6rem;
+    &__hamburger {
+      display: none;
+    }
+
+    &__section-logo {
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__section-language span {
+      display: block;
+    }
+
+    &__links {
+      display: flex;
+      gap: 1.75rem;
+    }
   }
 }

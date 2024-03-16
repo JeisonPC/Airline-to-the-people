@@ -1,8 +1,20 @@
 <header class="header">
-  <app-hamburger  (hamburgerClick)="clickEvent()" />
+  <app-hamburger class="header__hamburger" (hamburgerClick)="clickEvent()" />
+  <section class="header__section-logo">
+    <app-logo class="header__logo" />
 
+    <div class="header__links">
+      <a href="#">Check-in</a>
+      <a href="#">
+        Manage my booking
+      </a>
+      <a href="#">Information</a>
+    </div>
+  </section>
 
-  <app-logo />
-  <app-language />
+  <section class="header__section-language">
+    <app-language class="header__button-language" />
+    <span>English</span>
+  </section>
   <app-sidebar class="sidebar" [ngClass]="{'sidebar--open': status}" />
 </header>
