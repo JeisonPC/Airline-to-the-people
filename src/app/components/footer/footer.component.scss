@@ -11,7 +11,6 @@
   }
   &__section-up-logo > svg {
     width: 180px;
-    height: auto;
   }
   &__bloque-social {
     display: flex;
@@ -52,4 +51,53 @@
     gap: 0.5rem;
   }
 
+
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 446px;
+    &__section-up {
+      padding: 3.75rem 6rem 2rem;
+      flex-direction: row;
+      gap: 4rem;
+      position: relative;
+      height: 309px;
+      justify-content: space-between;
+    }
+
+    &__section-up-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &__section-up-logo > svg {
+      width: 200px;
+      height: auto;
+    }
+
+
+    &__block-social {
+      position: absolute;
+      bottom: 2rem;
+      right: 6rem;
+    }
+
+    &__block-destination-section h3 {
+      font-size: 20px;
+    }
+    &__section-up-logo > svg {
+      width: 200px;
+    }
+    &__section-up-social {
+      gap: 1rem;
+    }
+    &__block-destinations {
+      flex-direction: row;
+      gap: 4rem;
+    }
+    &__section-down {
+      padding: 1rem 6rem;
+    }
+  }
 }

@@ -9,14 +9,19 @@
     <a class="button-red" href="#">Buy</a>
   </div>
 </div>
+<h2 class="title-offers">Offers</h2>
 <section class="section-cards">
-  <h2>Offers</h2>
-  <app-card *ngFor="let card of cards" [title]="card.title" [image]="card.image" [content]="card.description" />
+  <app-card class="section-cards__card" *ngFor="let card of cards; let i = index"
+            [id]="'card-' + (i + 1)"  [title]="card.title" [image]="card.image"
+            [content]="card.description" />
 </section>
 
 <section class="section-card-high">
   <div class="section-card-high__container">
-    <img ngSrc="/assets/img/img-child.jpg" alt="img-child" width="400" height="200" priority>
+    <div class="section-card-high__container-img">
+      <img ngSrc="/assets/img/img-child.jpg" alt="img-child" width="400" height="592" priority>
+    </div>
+
     <div class="section-card-high__content">
       <div>
         <h3>Our destinations</h3>
