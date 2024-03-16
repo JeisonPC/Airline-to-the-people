@@ -1,7 +1,7 @@
 @import '_variables';
 .footer {
   background-color: $color-gray-8;
-
+  margin-top: 4rem;
   // Sección superior del footer
   &__section-up {
     padding: 2.25rem 1rem;

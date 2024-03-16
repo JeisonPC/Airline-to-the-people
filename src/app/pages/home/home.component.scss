@@ -1,5 +1,7 @@
+@import '_variables';
+
 .banner {
-  background-image: url('/assets/img/img-banner.jpg');
+  background-image: url("/assets/img/img-banner.jpg");
   height: 448px;
   background-repeat: no-repeat;
   background-position: 40% 34%;
@@ -28,8 +30,53 @@
 }
 
 .section-cards {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.section-card-high {
+  padding: 0 1rem;
+  height: 722px;
+
+  &__container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #181823 39.26%, #537FE7 100%);
+  }
+  &__content {
+    position: absolute;
+    bottom: 20%;
+    color: white;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__container h3 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  &__container h4 {
+    font-weight: 400;
+    color: $color-blue-5;
+    font-size: 34px;
+  }
+
+  & img {
+    height: 100%;
+    position: absolute;
+    top: -217px;
+    left: 50%;
+    clip-path: circle(40%);
+    transform: translate(-50%, 0);
+  }
+
 }
