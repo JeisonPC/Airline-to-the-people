@@ -1,4 +1,4 @@
-@import '_variables';
+@import "_variables";
 
 .banner {
   background-image: url("/assets/img/img-banner.jpg");
@@ -46,7 +46,7 @@
     height: 100%;
     width: 100%;
     border-radius: 1rem;
-    background: linear-gradient(180deg, #181823 39.26%, #537FE7 100%);
+    background: linear-gradient(180deg, #181823 39.26%, #537fe7 100%);
   }
   &__content {
     position: absolute;
@@ -78,5 +78,29 @@
     clip-path: circle(40%);
     transform: translate(-50%, 0);
   }
+}
 
+/* Estilos específicos para tablets */
+@media (min-width: 768px) {
+  .banner {
+    justify-content: flex-start;
+    padding: 0 6rem;
+
+    &__content {
+      gap: 2.25rem;
+    }
+
+    &__content h1 {
+      font-size: 58px;
+    }
+
+    &__content p {
+      font-size: 20px;
+      width: 564px;
+    }
+
+    &__content div {
+      gap: 0.25rem;
+    }
+  }
 }
