@@ -56,7 +56,9 @@
 
 @media (min-width: 768px) {
   .footer {
-    height: 446px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__section-up {
       padding: 3.75rem 6rem 2rem;
       flex-direction: row;
@@ -79,7 +81,7 @@
 
     &__block-social {
       position: absolute;
-      bottom: 2rem;
+      bottom: 1rem;
       right: 6rem;
     }
 
@@ -98,6 +100,8 @@
     }
     &__section-down {
       padding: 1rem 6rem;
+      flex-direction: row;
+      gap: 0.25rem;
     }
   }
 }
