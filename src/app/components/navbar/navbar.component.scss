@@ -9,6 +9,7 @@ $header: '.header';
   align-items: center;
   justify-content: space-between;
   padding: 8px 14px;
+  border: 2px solid white;
 
   &__hamburger {
     display: flex;
@@ -51,6 +52,9 @@ $header: '.header';
   height: 100%;
   background-color: #fff;
   transition: left 0.3s ease;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 5;
   left: -100%;
 
   &--open {

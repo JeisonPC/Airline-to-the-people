@@ -27,4 +27,9 @@ export class HomeComponent {
       description: 'From $600.00',
     },
   ];
+  showInformation = false;
+
+  onToggleMenu(state: boolean): void {
+    this.showInformation = state; // O cualquier lógica específica que desees realizar
+  }
 }

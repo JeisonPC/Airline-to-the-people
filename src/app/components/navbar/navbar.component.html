@@ -1,5 +1,5 @@
 <header class="header">
-  <app-hamburger class="header__hamburger" (hamburgerClick)="clickEvent()" />
+  <app-hamburger class="header__hamburger" (toggle)="handleToggle()"/>
   <section class="header__section-logo">
     <app-logo class="header__logo" />
 
@@ -16,5 +16,8 @@
     <app-language class="header__button-language" />
     <span>English</span>
   </section>
-  <app-sidebar class="sidebar" [ngClass]="{'sidebar--open': status}" />
+
 </header>
+<aside>
+  <app-sidebar class="sidebar" [ngClass]="{'sidebar--open': sidebarOpen}"></app-sidebar>
+</aside>

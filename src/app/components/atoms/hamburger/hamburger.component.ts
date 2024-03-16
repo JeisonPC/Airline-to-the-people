@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { SidebarService } from '../../sidebar/sidebar.service';
 
 @Component({
   standalone: true,
@@ -7,11 +9,27 @@ import { Component } from '@angular/core';
   templateUrl: './hamburger.component.html',
   imports: [CommonModule]
 })
-export class HamburgerComponent {
+export class HamburgerComponent implements OnInit, OnDestroy {
   menuOpen = false;
+  private subscription = new Subscription();
 
-  toggleMenu(): void {
-    this.menuOpen = !this.menuOpen;
+  @Output() toggle = new EventEmitter<boolean>();
+
+  constructor(private sidebarService: SidebarService) {}
+
+  ngOnInit(): void {
+    this.subscription.add(
+      this.sidebarService.menuIconState$.subscribe((state: boolean) => {
+        this.menuOpen = state;
+      })
+    );
   }
 
+  toggleMenu(): void {
+    this.sidebarService.toggleSidebar();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 }
