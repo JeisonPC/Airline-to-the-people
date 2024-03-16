@@ -5,7 +5,7 @@ import { CardComponent } from '../../components/card/card.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

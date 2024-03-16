@@ -1,5 +1,4 @@
 <div class="banner">
-  <!-- <img ngSrc="assets/img-banner.jpg" alt="" width="400" height="200" priority> -->
   <div class="banner__content">
     <div>
       <h1>Take a rest</h1>
@@ -9,9 +8,23 @@
     </div>
     <a class="button-red" href="#">Buy</a>
   </div>
-
-
 </div>
 <section class="section-cards">
+  <h2>Offers</h2>
   <app-card *ngFor="let card of cards" [title]="card.title" [image]="card.image" [content]="card.description" />
+</section>
+
+<section class="section-card-high">
+  <div class="section-card-high__container">
+    <img ngSrc="/assets/img/img-child.jpg" alt="img-child" width="400" height="200" priority>
+    <div class="section-card-high__content">
+      <div>
+        <h3>Our destinations</h3>
+        <h4>Discover the world</h4>
+      </div>
+      <p>Embark on an unforgettable adventure! Discover and enjoy our fascinating destinations. We are waiting for you
+        to explore the world together!</p>
+    </div>
+  </div>
+
 </section>
