@@ -1,0 +1,35 @@
+.sidebar_menu {
+  padding: 3rem 1rem;
+  font-size: 20px;
+  position: relative;
+
+  &__item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  &__item button {
+    font-size: 20px;
+  }
+
+  &__item:nth-child(2) {
+    border-top: 1px solid rgba(178, 178, 193, 1);
+    border-bottom: 1px solid rgba(178, 178, 193, 1);
+  }
+
+  &__information {
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  &__information--open {
+    left: 0;
+  }
+}
