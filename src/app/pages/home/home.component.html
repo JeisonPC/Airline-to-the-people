@@ -1,0 +1,35 @@
+<div class="banner">
+  <div class="banner__content">
+    <div>
+      <h1>Take a rest</h1>
+      <p>Discover all the offers available at the
+        best prices for the whole country and the
+        world</p>
+    </div>
+    <a class="button-red" href="#">Buy</a>
+  </div>
+</div>
+<h2 class="title-offers">Offers</h2>
+<section class="section-cards">
+  <app-card class="section-cards__card" *ngFor="let card of cards; let i = index"
+            [id]="'card-' + (i + 1)"  [title]="card.title" [image]="card.image"
+            [content]="card.description" />
+</section>
+
+<section class="section-card-high">
+  <div class="section-card-high__container">
+    <div class="section-card-high__container-img">
+      <img ngSrc="/assets/img/img-child.jpg" alt="img-child" width="400" height="592" priority>
+    </div>
+
+    <div class="section-card-high__content">
+      <div>
+        <h3>Our destinations</h3>
+        <h4>Discover the world</h4>
+      </div>
+      <p>Embark on an unforgettable adventure! Discover and enjoy our fascinating destinations. We are waiting for you
+        to explore the world together!</p>
+    </div>
+  </div>
+
+</section>

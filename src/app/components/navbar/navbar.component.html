@@ -1,0 +1,31 @@
+<header class="header">
+  <app-hamburger class="header__hamburger" (toggle)="handleToggle()" />
+  <section class="header__section-logo">
+    <app-logo class="header__logo" />
+
+    <div class="header__links">
+      <a href="#">Check-in</a>
+      <a href="#">
+        Manage my booking
+      </a>
+      <a class="header__information" href="#">Information
+        <div class="header__links-information">
+          <span>Help center</span>
+          <span>Flight state</span>
+          <span>Airplanes</span>
+          <span>Routes</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="header__section-language">
+    <app-language class="header__button-language" />
+    <span>English</span>
+  </section>
+
+</header>
+<aside>
+  <app-sidebar class="sidebar" [ngClass]="{'sidebar--open': sidebarOpen}"></app-sidebar>
+</aside>

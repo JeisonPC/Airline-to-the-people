@@ -1,0 +1,70 @@
+.card {
+  height: 258px;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    border-radius: 100% 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 120%;
+    height: 500px;
+    z-index: 1;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  &__image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Estilos específicos para tablets */
+@media (min-width: 768px) {
+  .card {
+    &::before {
+      width: 150%;
+    }
+  }
+  .card:nth-child(2)::before {
+    clip-path: url(#myClip);
+  }
+
+}

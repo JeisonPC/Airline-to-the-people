@@ -1,0 +1,24 @@
+<nav class="sidebar_menu">
+  <ul>
+    <li class="sidebar_menu__item"><button>Check-in</button></li>
+    <li class="sidebar_menu__item"><button>Manage my booking</button></li>
+    <li class="sidebar_menu__item"><button (click)="toggleInformation()">Information</button></li>
+  </ul>
+  <div class="sidebar_menu__information" [ngClass]="{'sidebar_menu__information--open': showInformation}">
+    <h2>Information</h2>
+    <ul>
+      <li class="sidebar_menu__information-item">
+        Help center
+      </li>
+      <li class="sidebar_menu__information-item">
+        Flight state
+      </li>
+      <li class="sidebar_menu__information-item">
+        Airplanes
+      </li>
+      <li class="sidebar_menu__information-item">
+        Routes
+      </li>
+    </ul>
+  </div>
+</nav>
