@@ -1,5 +1,5 @@
 <header class="header">
-  <app-hamburger class="header__hamburger" (toggle)="handleToggle()"/>
+  <app-hamburger class="header__hamburger" (toggle)="handleToggle()" />
   <section class="header__section-logo">
     <app-logo class="header__logo" />
 
@@ -8,7 +8,15 @@
       <a href="#">
         Manage my booking
       </a>
-      <a href="#">Information</a>
+      <a class="header__information" href="#">Information
+        <div class="header__links-information">
+          <span>Help center</span>
+          <span>Flight state</span>
+          <span>Airplanes</span>
+          <span>Routes</span>
+        </div>
+      </a>
+
     </div>
   </section>
 

@@ -12,6 +12,9 @@
 
   &__item button {
     font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   &__item:nth-child(2) {
@@ -21,12 +24,25 @@
 
   &__information {
     position: absolute;
+    font-size: 20px;
     height: 100dvh;
     width: 100%;
+    padding: 3rem 1rem;
     background-color: white;
     top: 0;
     left: -100%;
     transition: left 0.3s ease;
+  }
+
+  &__information ul {
+    padding: 1rem 0;
+  }
+
+  &__information-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 2.75rem;
   }
 
   &__information--open {
