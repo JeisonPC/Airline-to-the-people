@@ -10,6 +10,7 @@ import { Component, Input  } from '@angular/core';
       viewBox="0 0 103 33"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      id="logo-flyr"
     >
       <g clip-path="url(#clip0_5_72)">
         <path
@@ -60,6 +61,7 @@ import { Component, Input  } from '@angular/core';
       </defs>
     </svg>
   `,
+  styleUrl: './logo.Component.scss',
 })
 export class LogoComponent {
   @Input() fillColor: string = '#537FE7'; // Color por defecto

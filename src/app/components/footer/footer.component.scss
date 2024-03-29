@@ -9,10 +9,10 @@
     flex-direction: column;
     gap: 4rem;
   }
-  &__section-up-logo > svg {
+  &__section-up-logo svg {
     width: 180px;
   }
-  &__bloque-social {
+  &__block-social {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -33,7 +33,7 @@
   &__block-destination-section ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 14px;
   }
   // Sección superior del footer dentro de las redes sociales
   &__section-up-social {
@@ -54,17 +54,23 @@
 
 }
 
+.mobile-logo svg {
+  height: 58px !important;
+  width: 180px !important; /* Adjust width as needed */
+}
+
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     &__section-up {
-      padding: 3.75rem 6rem 2rem;
+      padding: 3.75rem 9rem 2rem 6rem;
       flex-direction: row;
       gap: 4rem;
       position: relative;
-      height: 309px;
+      height: 398px;
       justify-content: space-between;
     }
 
@@ -81,8 +87,15 @@
 
     &__block-social {
       position: absolute;
-      bottom: 1rem;
+      bottom: 2rem;
+      display: flex;
       right: 6rem;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__block-destination-section {
+      gap: 20px;
     }
 
     &__block-destination-section h3 {
