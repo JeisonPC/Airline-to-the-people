@@ -1,4 +1,4 @@
-import { Component, Input  } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -61,7 +61,7 @@ import { Component, Input  } from '@angular/core';
       </defs>
     </svg>
   `,
-  styleUrl: './logo.Component.scss',
+  styleUrl: './logo.component.scss',
 })
 export class LogoComponent {
   @Input() fillColor: string = '#537FE7'; // Color por defecto
