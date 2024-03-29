@@ -62,7 +62,7 @@ $header: ".header";
 }
 
 /* Estilos específicos para tablets */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #{$header} {
     padding: 1rem 6rem;
     position: relative;

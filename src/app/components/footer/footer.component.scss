@@ -60,7 +60,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
       flex-direction: row;
       gap: 4rem;
       position: relative;
-      height: 398px;
+      height: 480px;
       justify-content: space-between;
     }
 
@@ -115,6 +115,14 @@
       padding: 1rem 6rem;
       flex-direction: row;
       gap: 0.25rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    &__section-up {
+      height: 398px;
     }
   }
 }
